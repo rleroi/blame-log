@@ -18,8 +18,8 @@ The method returns an array representing the developers and their respective err
 ```php
 [
     "R Leroi" => 185,
-    "Someone Else" => 132,
-    "Another Dev" => 33,
+    "K Reeves" => 132,
+    "Randy Marsh" => 33,
 ]
 ```
 

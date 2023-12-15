@@ -1,0 +1,19 @@
+{
+  "name": "rleroi/blame-log",
+  "description": "Who to blame for errors!",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "RLeroi\\BlameLog\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "R. Leroi",
+      "homepage": "https://github.com/rleroi"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  }
+}

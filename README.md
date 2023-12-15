@@ -1,17 +1,20 @@
 # BlameLog
-> Like Spotify Wrapped for bad code
+__Like Spotify Wrapped for bad code__
 
-Input your logfile and get an overview of the developers that created the most errors by using git-blame.
+BlameLog is a tool that provides a Spotify Wrapped-style overview of developers responsible for the most errors in your codebase using git-blame.
 
 _Requires Git to be installed on your system._
 
 ## Usage
 ```php
-$results = RLeroi\BlameLog\BlameLog::calculateTotals('/Users/rleroi/dev/my-project/storage/logs/laravel.log');
-```
-_This will take a while depending on the size of your log file._
+use RLeroi\BlameLog\BlameLog;
 
-This will return an array like this:
+$results = BlameLog::calculateTotals('/Users/rleroi/dev/my-project/storage/logs/laravel.log');
+
+```
+_Note: This operation may take a while, depending on the size of your log file._
+
+The method returns an array representing the developers and their respective error counts:
 ```php
 [
     "R Leroi" => 185,
@@ -21,4 +24,4 @@ This will return an array like this:
 ```
 
 ## Disclaimer
-This package is made for _fun_ only, do not fire anyone. 😉
+This package is intended for _fun_ purposes only. Please refrain from using it to make employment decisions. 😉
